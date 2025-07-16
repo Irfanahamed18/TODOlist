@@ -1,0 +1,111 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f3f4f6;
+  color: #111827;
+  display: flex;
+  justify-content: center;
+  padding: 40px;
+}
+
+.container {
+  width: 600px;
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.task-form {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.task-form input {
+  flex: 1;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #d1d5db;
+}
+
+.task-form button {
+  background: #10b981;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.filters {
+  margin-bottom: 20px;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.filters select {
+  padding: 8px;
+  border-radius: 6px;
+  border: 1px solid #d1d5db;
+}
+
+.task-container {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.task-card {
+  background: #f9fafb;
+  padding: 15px;
+  border-left: 6px solid #cbd5e1;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.task-info {
+  max-width: 70%;
+}
+
+.task-status {
+  font-weight: bold;
+  padding: 4px 10px;
+  border-radius: 6px;
+  text-transform: capitalize;
+  font-size: 14px;
+  display: inline-block;
+  margin-top: 6px;
+}
+
+.status-completed { background: #d1fae5; color: #065f46; }
+.status-pending { background: #fef9c3; color: #92400e; }
+.status-onprogress { background: #dbeafe; color: #1e3a8a; }
+.status-cancelled { background: #fee2e2; color: #991b1b; }
+.status-onprogress {
+  color: orange;
+  font-weight: bold;
+}
+
+.task-actions button {
+  margin-left: 6px;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 12px;
+}
+
+.task-actions .edit { background: #facc15; }
+.task-actions .done { background: #4ade80; }
+.task-actions .cancel { background: #f87171; }
+.task-actions .delete { background: #f43f5e;  }

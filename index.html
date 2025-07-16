@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>To-Do Tasks</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>🗂️ Task Manager</h1>
+
+    <div class="task-form">
+      <input type="text" id="taskInput" placeholder="Add a task..." />
+      <input type="date" id="taskDate" />
+      <button id="addBtn">Add</button>
+    </div>
+
+    <div class="filters">
+      <label>Filter:</label>
+      <select id="filter">
+        <option value="all">All</option>
+        <option value="completed">Completed</option>
+        <option value="onprogress">On Progress</option>
+        <option value="pending">Pending</option>
+        <option value="cancelled">Cancelled</option>
+      </select>
+    </div>
+
+    <div id="taskContainer" class="task-container"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
